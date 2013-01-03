@@ -47,6 +47,6 @@ describe 'When a site lacks a contact' {
 
       site.email_contact(email)
       
-      verify(email, never()).deliver('John Smith')
+      verify(email, never()).deliver(any(typeof(String)))
  	}
 }
